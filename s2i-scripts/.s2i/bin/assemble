@@ -7,7 +7,7 @@
 #echo "---> Enabling s2i support in httpd24 image"
 
 #config_s2i
-
+USER ROOT
 ######## CUSTOMIZATION STARTS HERE ############
 echo "---Installing application..."
 
@@ -17,7 +17,7 @@ echo "----Creating info page"
 echo "Page built on $(date +%Y-%m-%d)" > ./info.html
 echo "mensaje que te dan" >> ./info.html
 
-
+USER 1001
 ######## CUSTOMIZATION ENDS HERE ############
 
 #if [ -d ./httpd-cfg ]; then
