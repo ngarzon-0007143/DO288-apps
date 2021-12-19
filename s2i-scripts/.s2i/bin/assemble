@@ -9,7 +9,13 @@ echo "---> Enabling s2i support in httpd24 image"
 config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
+echo "---Installing application..."
 
+cp -Rf /tmp/src/*.html ./
+
+echo "----Creating info page"
+echo "Page built on $(date +%Y-%m-%d)" > ./info.html
+echo "mensaje que te dan" >> ./info.html
 
 
 ######## CUSTOMIZATION ENDS HERE ############
