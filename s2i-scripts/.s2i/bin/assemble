@@ -9,15 +9,15 @@
 #config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
-sudo echo "---Installing application..."
+echo "---Installing application..."
 
 cp -Rf /tmp/src/*.html ./
 
-sudo echo "----Creating info page"
-sudo echo "Page built on $(date +%Y-%m-%d)" > ./info.html
-sudo echo "mensaje que te dan" >> ./info.html
+echo "----Creating info page"
+echo "Page built on $(date +%Y-%m-%d)" > ./info.html
+echo "mensaje que te dan" >> ./info.html
 
-USER 1001
+
 ######## CUSTOMIZATION ENDS HERE ############
 
 #if [ -d ./httpd-cfg ]; then
