@@ -4,8 +4,8 @@
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
-echo $(date +%Y-%m-%d)>./info.html
-echo "mensaje que me dan" >> ./info.html
+echo $(date +%Y-%m-%d)
+echo "mensaje que me dan"
 ######## CUSTOMIZATION ENDS HERE ############
 
 
