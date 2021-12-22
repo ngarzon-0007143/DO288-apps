@@ -1,7 +1,13 @@
 #!/bin/bash
 
-### CUSTOMIZATION STARTS HERE ############
+####### CUSTOMIZATION STARTS HERE ############
+#cp ruta/*.html ./
 
+#echo $(date +%Y-%m-%d) > ./info.html
+#echo "mensaje que me dan" >> ./info.html
+
+echo $(date +%Y-%m-%d)
+echo "mensaje que me dan"
 
 ######## CUSTOMIZATION ENDS HERE ############
 
